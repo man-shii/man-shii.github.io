@@ -2,7 +2,7 @@
   url: mailto://wzw-manshii@gmail.com
   icon: fas fa-envelope
 - title: QQ
-  url: mqqwpa://im/chat?chat_type=wpa&uin=12345678&version=1&src_type=web
+  url: http://wpa.qq.com/msgrd?v=3&uin=961303289&site=qq&menu=yes
   icon: fab fa-qq
 - title: GitHub
   url: https://github.com/man-shii/
