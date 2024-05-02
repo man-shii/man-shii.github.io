@@ -70,5 +70,18 @@ layout: default
 {% endfor %}
 {% endraw %}
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var clipboard = new ClipboardJS('.btn-code-copy');
+        clipboard.on('success', function(e) {
+            alert('代码已成功复制到剪贴板！');
+            e.clearSelection();
+        });
+        clipboard.on('error', function(e) {
+            alert('复制失败，请手动复制代码！');
+        });
+    });
+</script>
+
 
 
