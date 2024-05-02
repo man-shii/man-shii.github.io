@@ -52,36 +52,6 @@ layout: default
 </aside>
 {% endif %}
 
-{% raw %}
-<!-- 遍历所有代码块 -->
-{% for code_block in page.content | split:'{% endhighlight %}' %}
-    {% assign lang = code_block | split:'{% highlight ' | last | split:' %}' | first %}
-    {% assign code = code_block | remove:'{% highlight ' | remove:' ' | remove:lang | remove:' %}' %}
-    
-    <!-- 添加代码块 -->
-    <div class="code-block">
-        <!-- 语言标签 -->
-        <div class="language">{{ lang }}</div>
-        <!-- 代码内容 -->
-        <pre><code>{{ code | escape }}</code></pre>
-        <!-- 复制按钮 -->
-        <button class="btn-code-copy" data-clipboard-text="{{ code }}">复制代码</button>
-    </div>
-{% endfor %}
-{% endraw %}
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var clipboard = new ClipboardJS('.btn-code-copy');
-        clipboard.on('success', function(e) {
-            alert('代码已成功复制到剪贴板！');
-            e.clearSelection();
-        });
-        clipboard.on('error', function(e) {
-            alert('复制失败，请手动复制代码！');
-        });
-    });
-</script>
 
 
 
