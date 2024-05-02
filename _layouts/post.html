@@ -51,3 +51,24 @@ layout: default
   </ul>
 </aside>
 {% endif %}
+
+{% raw %}
+<!-- 遍历所有代码块 -->
+{% for code_block in page.content | split:'{% endhighlight %}' %}
+    {% assign lang = code_block | split:'{% highlight ' | last | split:' %}' | first %}
+    {% assign code = code_block | remove:'{% highlight ' | remove:' ' | remove:lang | remove:' %}' %}
+    
+    <!-- 添加代码块 -->
+    <div class="code-block">
+        <!-- 语言标签 -->
+        <div class="language">{{ lang }}</div>
+        <!-- 代码内容 -->
+        <pre><code>{{ code | escape }}</code></pre>
+        <!-- 复制按钮 -->
+        <button class="btn-code-copy" data-clipboard-text="{{ code }}">复制代码</button>
+    </div>
+{% endfor %}
+{% endraw %}
+
+
+
