@@ -20,13 +20,13 @@ toc:  true
 
 ## 二 安卓 Termux执行代码
 
->先安装 **wget** ,使用以下命令安装
+>先安装 `wget` ,使用以下命令安装
 
 {% highlight js %}
 pkg update && pkg install wget
 {% endhighlight %}
 
->获取**Warp优选IP** 主执行代码
+>获取 `Warp优选IP` ,主执行代码
 
 {% highlight js %}
 wget -N https://gitlab.com/Misaka-blog/warp-script/-/raw/main/files/warp-yxip/warp-yxip.sh && bash warp-yxip.sh
