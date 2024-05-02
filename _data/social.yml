@@ -1,9 +1,9 @@
 - title: Email
-  url: mailto://vszhub@gmail.com
+  url: mailto://wzw-manshii@gmail.com
   icon: fas fa-envelope
 - title: QQ
   url: mqqwpa://im/chat?chat_type=wpa&uin=12345678&version=1&src_type=web
   icon: fab fa-qq
 - title: GitHub
-  url: https://github.com/vszhub/not-pure-poole
+  url: https://github.com/man-shii/
   icon: fab fa-github
