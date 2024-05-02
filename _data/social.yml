@@ -1,9 +1,9 @@
 - title: Email
   url: mailto://vszhub@gmail.com
   icon: fas fa-envelope
-- title: Wechat
-  url: https://twitter.com/vszhub
-  icon: fab fa-twitter
+- title: QQ
+  url: mqqwpa://im/chat?chat_type=wpa&uin=12345678&version=1&src_type=web
+  icon: fab fa-qq
 - title: GitHub
   url: https://github.com/vszhub/not-pure-poole
   icon: fab fa-github
