@@ -50,7 +50,7 @@ sass:
 google_analytics: G-D0853YZZZS
 
 # Replace this value and uncomment to enable Disqus
-disqus: xxxxxx
+#disqus: xxxxxx
 
 # Specify the author for blog posts
 author:
