@@ -35,14 +35,16 @@ layout: default
       </li>
     {%- endfor -%}
   </ul>
-  <a href="/dates/"  class="back-to-top"> &#8648;</a>
+  <a href="#" onclick="backToTop(".current-item")" class="back-to-top"> &#8648;</a>
 {%- endfor -%}
 
 <script>
-function backToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
+function backToTop(anchorId) {
+      const anchorElement = document.getElementById(anchorId);
+      if (anchorElement) {
+        anchorElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    }
 </script>
